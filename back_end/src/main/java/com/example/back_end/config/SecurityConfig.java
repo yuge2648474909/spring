@@ -38,7 +38,7 @@ public class SecurityConfig {
     AuthenticationEntryPointImpl authenticationEntryPoint;
 
 
-
+    // springsecurity的验证链
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf().disable()
