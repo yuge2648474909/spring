@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
 public class LoginUser implements UserDetails {
     // 权限集
     List<String> permissions;
+    // 后台用户
     private User user;
 
     public LoginUser(User user, List<String> permissions){
